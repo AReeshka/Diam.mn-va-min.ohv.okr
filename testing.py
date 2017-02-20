@@ -1,4 +1,11 @@
 import matplotlib.pyplot as plt
+
+def choose_next(A, nextA, B, nextB, dir_l):
+    if (vecmul(nextA[0] - A[0], nextA[1] - A[1], B[0] - nextB[0], B[1] - nextB[1]) < 0):
+        return 1
+    else:
+        return 0
+    
 def draw_bad(A, nextA, B, nextB, dir, wdir):
 
     plt.plot(A[0], A[1], 'go')
