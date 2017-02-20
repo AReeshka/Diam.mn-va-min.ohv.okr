@@ -1,5 +1,8 @@
 import matplotlib.pyplot as plt
 
+def vecmul(x1, y1, x2, y2):
+    return x1 * y2 - x2 * y1 
+
 def choose_next(A, nextA, B, nextB, dir_l):
     if (vecmul(nextA[0] - A[0], nextA[1] - A[1], B[0] - nextB[0], B[1] - nextB[1]) < 0):
         return 1
